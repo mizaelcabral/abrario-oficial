@@ -1,5 +1,4 @@
 import Marquee from "react-fast-marquee";
-import { Link } from "react-router-dom";
 
 const projectSlides = [
   {
@@ -47,8 +46,17 @@ const projectSlides = [
 ];
 
 const ProjectsSlider = () => {
+  const whatsappEventUrl =
+    "https://api.whatsapp.com/send/?phone=5521982043786&text=" +
+    encodeURIComponent("Olá! Quero que a Abrario participe de nosso evento.") +
+    "&type=phone_number&app_absent=0";
+
   return (
-    <section className="project-section fix">
+    <section
+      id="eventos"
+      style={{ scrollMarginTop: "110px" }}
+      className="project-section fix"
+    >
       <div className="container">
         <div className="section-title text-center">
           <span className="sub-title wow fadeInUp">Nossos eventos</span>
@@ -70,13 +78,26 @@ const ProjectsSlider = () => {
                   <div className={`project-content ${slide.contentClass}`}>
                     <div className="content">
                       <h3>
-                        <Link to={"/project-details"}>{slide.title}</Link>
+                        <a
+                          href={whatsappEventUrl}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          style={{ color: "inherit", textDecoration: "none" }}
+                        >
+                          {slide.title}
+                        </a>
                       </h3>
                       <h5>{slide.subtitle}</h5>
                     </div>
-                    <Link to={"/project-details"} className="arrow-icon">
+                    <a
+                      href={whatsappEventUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="arrow-icon"
+                      title="Quero que a Abrario participe de nosso evento"
+                    >
                       <i className="fa-solid fa-arrow-right-long" />
-                    </Link>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -97,13 +118,26 @@ const ProjectsSlider = () => {
                   <div className={`project-content ${slide.contentClass}`}>
                     <div className="content">
                       <h3>
-                        <Link to={"/project-details"}>{slide.title}</Link>
+                        <a
+                          href={whatsappEventUrl}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          style={{ color: "inherit", textDecoration: "none" }}
+                        >
+                          {slide.title}
+                        </a>
                       </h3>
                       <h5>{slide.subtitle}</h5>
                     </div>
-                    <Link to={"/project-details"} className="arrow-icon">
+                    <a
+                      href={whatsappEventUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="arrow-icon"
+                      title="Quero que a Abrario participe de nosso evento"
+                    >
                       <i className="fa-solid fa-arrow-right-long" />
-                    </Link>
+                    </a>
                   </div>
                 </div>
               </div>

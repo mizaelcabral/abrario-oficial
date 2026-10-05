@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 
 const teamData = [
   {
@@ -7,12 +6,12 @@ const teamData = [
     role: "Presidente Abrario",
     delay: ".2s",
     socialLinks: [
-      { icon: "fa-brands fa-twitter", url: "#" },
+      { icon: "fa-brands fa-facebook-f", url: "https://www.facebook.com/Abrariooficial" },
       {
         icon: "fa-brands fa-whatsapp",
         url: "https://api.whatsapp.com/send/?phone=5521982043786&text=Ol%C3%A1+Abrario+estou+precisando+de+atendimento%21&type=phone_number&app_absent=0",
       },
-      { icon: "fa-brands fa-instagram", url: "#" },
+      { icon: "fa-brands fa-instagram", url: "https://www.instagram.com/abrariooficial/" },
       { icon: "fas fa-paper-plane", url: "#" },
     ],
   },
@@ -22,12 +21,12 @@ const teamData = [
     role: "Diretor de Cultivo",
     delay: ".4s",
     socialLinks: [
-      { icon: "fa-brands fa-twitter", url: "#" },
+      { icon: "fa-brands fa-facebook-f", url: "https://www.facebook.com/Abrariooficial" },
       {
         icon: "fa-brands fa-whatsapp",
         url: "https://api.whatsapp.com/send/?phone=5521982043786&text=Ol%C3%A1+Abrario+estou+precisando+de+atendimento%21&type=phone_number&app_absent=0",
       },
-      { icon: "fa-brands fa-instagram", url: "#" },
+      { icon: "fa-brands fa-instagram", url: "https://www.instagram.com/abrariooficial/" },
       { icon: "fas fa-paper-plane", url: "#" },
     ],
   },
@@ -37,12 +36,12 @@ const teamData = [
     role: "Diretor Administrativo",
     delay: ".6s",
     socialLinks: [
-      { icon: "fa-brands fa-twitter", url: "#" },
+      { icon: "fa-brands fa-facebook-f", url: "https://www.facebook.com/Abrariooficial" },
       {
         icon: "fa-brands fa-whatsapp",
         url: "https://api.whatsapp.com/send/?phone=5521982043786&text=Ol%C3%A1+Abrario+estou+precisando+de+atendimento%21&type=phone_number&app_absent=0",
       },
-      { icon: "fa-brands fa-instagram", url: "#" },
+      { icon: "fa-brands fa-instagram", url: "https://www.instagram.com/abrariooficial/" },
       { icon: "fas fa-paper-plane", url: "#" },
     ],
   },
@@ -52,12 +51,12 @@ const teamData = [
     role: "Gestão de Gente",
     delay: ".8s",
     socialLinks: [
-      { icon: "fa-brands fa-twitter", url: "#" },
+      { icon: "fa-brands fa-facebook-f", url: "https://www.facebook.com/Abrariooficial" },
       {
         icon: "fa-brands fa-whatsapp",
         url: "https://api.whatsapp.com/send/?phone=5521982043786&text=Ol%C3%A1+Abrario+estou+precisando+de+atendimento%21&type=phone_number&app_absent=0",
       },
-      { icon: "fa-brands fa-instagram", url: "#" },
+      { icon: "fa-brands fa-instagram", url: "https://www.instagram.com/abrariooficial/" },
       { icon: "fas fa-paper-plane", url: "#" },
     ],
   },
@@ -89,13 +88,17 @@ const Teams = () => {
                   <img src={member.image} alt="img" />
                 </div>
                 <div className="team-content">
-                  <h5>
-                    <Link to="/volounteer-details">{member.name}</Link>
-                  </h5>
+                  <h5>{member.name}</h5>
                   <p>{member.role}</p>
                   <div className="social-icon">
                     {member.socialLinks.map((link, i) => (
-                      <a href={link.url} key={i}>
+                      <a
+                        href={link.url}
+                        key={i}
+                        target={link.url !== "#" ? "_blank" : undefined}
+                        rel={link.url !== "#" ? "noopener noreferrer" : undefined}
+                        title={link.icon.includes("instagram") ? "Instagram AbraRio" : undefined}
+                      >
                         <i className={link.icon} />
                       </a>
                     ))}

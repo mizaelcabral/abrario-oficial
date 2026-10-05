@@ -110,9 +110,9 @@ const FaqList = ({ className }: { className?: string }) => {
                   data-wow-duration="2500ms"
                 >
                   <img src="/img/home-1/faq.jpg" alt="img" />
-                  <ModalVideo>
+                  <ModalVideo videoUrl="https://www.youtube.com/watch?v=t3N55dF4w0Y">
                     <a
-                      href="#"
+                      href="https://www.youtube.com/watch?v=t3N55dF4w0Y"
                       className="video-btn ripple video-popup"
                       style={{ zIndex: "99" }}
                     >

@@ -66,20 +66,28 @@ const Volounteer = () => {
                       />
                     </div>
                     <div className="volounteer-content">
-                      <h5>
-                        <Link to={"/volounteer-details"}>{vol.name}</Link>
-                      </h5>
+                      <h5>{vol.name}</h5>
                       <p>{vol.role}</p>
                       <div className="social-icon">
-                        <Link to="#">
-                          <i className="fa-brands fa-twitter" />
-                        </Link>
+                        <a
+                          href="https://www.facebook.com/Abrariooficial"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          title="Facebook AbraRio"
+                        >
+                          <i className="fa-brands fa-facebook-f" />
+                        </a>
                         <Link to="#">
                           <i className="fa-brands fa-whatsapp" />
                         </Link>
-                        <Link to="#">
+                        <a
+                          href="https://www.instagram.com/abrariooficial/"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          title="Instagram AbraRio"
+                        >
                           <i className="fa-brands fa-instagram" />
-                        </Link>
+                        </a>
                         <Link to="#">
                           <i className="fas fa-paper-plane" />
                         </Link>

@@ -136,17 +136,37 @@ const NewsDetails = () => {
                       </div>
                       <div className="col-lg-4 col-12 mt-3 mt-lg-0 text-lg-end">
                         <div className="social-share">
-                          <a href="#">
-                            <i className="fab fa-twitter" />
+                          <a
+                            href="https://www.facebook.com/Abrariooficial"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            title="Facebook AbraRio"
+                          >
+                            <i className="fab fa-facebook-f" />
                           </a>
-                          <a href="#">
+                          <a
+                            href="https://www.instagram.com/abrariooficial/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            title="Instagram AbraRio"
+                          >
+                            <i className="fa-brands fa-instagram" />
+                          </a>
+                          <a
+                            href="https://www.youtube.com/@abrariooficial"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            title="YouTube AbraRio"
+                          >
                             <i className="fa-brands fa-youtube" />
                           </a>
-                          <a href="#">
-                            <i className="fab fa-linkedin-in" />
-                          </a>
-                          <a href="#">
-                            <i className="fab fa-facebook-f" />
+                          <a
+                            href="https://wa.me/5521982043786"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            title="WhatsApp AbraRio"
+                          >
+                            <i className="fa-brands fa-whatsapp" />
                           </a>
                         </div>
                       </div>

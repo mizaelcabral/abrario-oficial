@@ -238,18 +238,30 @@ const MobileMenu = ({
                     </li>
                   </ul>
                   <div className="social-icon d-flex align-items-center">
-                    <Link to="#">
-                      <i className="fab fa-facebook-f" />
-                    </Link>
-                    <Link to="#">
-                      <i className="fab fa-twitter" />
-                    </Link>
-                    <Link to="#">
+                    <a
+                      href="https://wa.me/5521982043786"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      title="WhatsApp AbraRio"
+                    >
+                      <i className="fa-brands fa-whatsapp" />
+                    </a>
+                    <a
+                      href="https://www.instagram.com/abrariooficial/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      title="Instagram AbraRio"
+                    >
+                      <i className="fa-brands fa-instagram" />
+                    </a>
+                    <a
+                      href="https://www.youtube.com/@abrariooficial"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      title="YouTube AbraRio"
+                    >
                       <i className="fab fa-youtube" />
-                    </Link>
-                    <Link to="#">
-                      <i className="fab fa-linkedin-in" />
-                    </Link>
+                    </a>
                   </div>
                 </div>
               </div>

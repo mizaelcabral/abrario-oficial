@@ -1,7 +1,11 @@
 import { donationDataOne } from "@/data/donationData";
-import { Link } from "react-router-dom";
 
 const DonationOne = () => {
+  const whatsappUrl =
+    "https://api.whatsapp.com/send/?phone=5521982043786&text=" +
+    encodeURIComponent("Olá! Quero ajudar a Abrario doando") +
+    "&type=phone_number&app_absent=0";
+
   return (
     <section
       id="doe"
@@ -16,9 +20,14 @@ const DonationOne = () => {
               <span>C</span>onheça nossas campanhas para <br /> melhorias da Abrario
             </h2>
           </div>
-          <Link to="/donation" className="theme-btn">
+          <a
+            href={whatsappUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="theme-btn"
+          >
             Saiba mais <i className="fa-solid fa-arrow-right-long" />
-          </Link>
+          </a>
         </div>
         <div className="donation-wrapper">
           <div className="row">
@@ -37,7 +46,13 @@ const DonationOne = () => {
                   </div>
                   <div className="donation-content">
                     <h4>
-                      <Link to="/donation-details">{item.title}</Link>
+                      <a
+                        href={whatsappUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        {item.title}
+                      </a>
                     </h4>
                     <p>{item.description}</p>
                     <div className={`pro-items ${item.progressClass}`}>
@@ -53,9 +68,14 @@ const DonationOne = () => {
                         <span>Arrecadado:</span> {item.raised}
                       </li>
                     </ul>
-                    <Link to="/donation-details" className={item.btnClass}>
+                    <a
+                      href={whatsappUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className={item.btnClass}
+                    >
                       Doe agora <i className="fa-solid fa-arrow-right-long" />
-                    </Link>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -68,3 +88,4 @@ const DonationOne = () => {
 };
 
 export default DonationOne;
+

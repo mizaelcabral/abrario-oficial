@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import "swiper/css";
 import "swiper/css/pagination";
 import { Autoplay, Pagination } from "swiper/modules";
@@ -103,9 +102,7 @@ const ServicesOne = () => {
                   <img src={slide.icon} alt="img" />
                 </div>
                 <div className="content">
-                  <h3>
-                    <Link to={"/project"}>{slide.title}</Link>
-                  </h3>
+                  <h3>{slide.title}</h3>
                   <p>{slide.description}</p>
                   <a
                     href="https://api.whatsapp.com/send/?phone=5521982043786&text=Ol%C3%A1+Abrario+estou+precisando+de+atendimento%21&type=phone_number&app_absent=0"

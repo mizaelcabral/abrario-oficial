@@ -18,7 +18,7 @@ const exploreNow: FooterLink[] = [
   { name: "Nosso Time", path: "/#nosso-time" },
   { name: "Faça sua Doação", path: "/#doe" },
   { name: "Perguntas Frequentes", path: "/faq" },
-  { name: "Projetos & Ações", path: "/project" },
+  { name: "Projetos & Eventos", path: "/#eventos" },
 ];
 
 const supports: FooterLink[] = [
@@ -145,6 +145,14 @@ const FooterOne = () => {
                   </form>
                   <div className="social-icon">
                     <a
+                      href="https://www.facebook.com/Abrariooficial"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      title="Facebook AbraRio"
+                    >
+                      <i className="fa-brands fa-facebook-f" />
+                    </a>
+                    <a
                       href="https://wa.me/5521982043786"
                       target="_blank"
                       rel="noopener noreferrer"
@@ -153,7 +161,7 @@ const FooterOne = () => {
                       <i className="fa-brands fa-whatsapp" />
                     </a>
                     <a
-                      href="https://www.instagram.com/abrario_"
+                      href="https://www.instagram.com/abrariooficial/"
                       target="_blank"
                       rel="noopener noreferrer"
                       title="Instagram AbraRio"
@@ -161,7 +169,7 @@ const FooterOne = () => {
                       <i className="fa-brands fa-instagram" />
                     </a>
                     <a
-                      href="https://www.youtube.com"
+                      href="https://www.youtube.com/@abrariooficial"
                       target="_blank"
                       rel="noopener noreferrer"
                       title="YouTube AbraRio"

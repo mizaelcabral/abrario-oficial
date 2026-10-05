@@ -1,5 +1,4 @@
 import type { DonationType } from "@/type/donationType";
-import { Link } from "react-router-dom";
 
 const DonationTwo = ({
   data,
@@ -49,7 +48,13 @@ const DonationTwo = ({
                   </div>
                   <div className="donation-content">
                     <h4>
-                      <Link to={"/donation-details"}>{item.title}</Link>
+                      <a
+                        href="https://api.whatsapp.com/send/?phone=5521982043786&text=Ol%C3%A1%21+Quero+ajudar+a+Abrario+doando&type=phone_number&app_absent=0"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        {item.title}
+                      </a>
                     </h4>
                     <div className={`pro-items ${item.progressClass}`}>
                       <div className="progress">
@@ -62,9 +67,14 @@ const DonationTwo = ({
                         <span>Goal - {item.goal}</span>
                       </li>
                     </ul>
-                    <Link to={"/donation-details"} className={item.btnClass}>
-                      Donate Now <i className="fa-solid fa-arrow-right-long" />
-                    </Link>
+                    <a
+                      href="https://api.whatsapp.com/send/?phone=5521982043786&text=Ol%C3%A1%21+Quero+ajudar+a+Abrario+doando&type=phone_number&app_absent=0"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className={item.btnClass}
+                    >
+                      Doe agora <i className="fa-solid fa-arrow-right-long" />
+                    </a>
                   </div>
                 </div>
               </div>

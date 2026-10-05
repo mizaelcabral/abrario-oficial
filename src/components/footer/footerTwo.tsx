@@ -21,20 +21,20 @@ const instagramData = [
   {
     id: 1,
     img: "/img/home-2/instagram/01.jpg",
-    link: "https://instagram.com",
+    link: "https://www.instagram.com/abrariooficial/",
   },
-  { id: 2, img: "/img/home-2/instagram/02.jpg", link: "https://instagram.com" },
-  { id: 3, img: "/img/home-2/instagram/03.jpg", link: "https://instagram.com" },
-  { id: 4, img: "/img/home-2/instagram/04.jpg", link: "https://instagram.com" },
-  { id: 5, img: "/img/home-2/instagram/05.jpg", link: "https://instagram.com" },
-  { id: 6, img: "/img/home-2/instagram/01.jpg", link: "https://instagram.com" },
-  { id: 7, img: "/img/home-2/instagram/02.jpg", link: "https://instagram.com" },
-  { id: 8, img: "/img/home-2/instagram/03.jpg", link: "https://instagram.com" },
-  { id: 9, img: "/img/home-2/instagram/04.jpg", link: "https://instagram.com" },
+  { id: 2, img: "/img/home-2/instagram/02.jpg", link: "https://www.instagram.com/abrariooficial/" },
+  { id: 3, img: "/img/home-2/instagram/03.jpg", link: "https://www.instagram.com/abrariooficial/" },
+  { id: 4, img: "/img/home-2/instagram/04.jpg", link: "https://www.instagram.com/abrariooficial/" },
+  { id: 5, img: "/img/home-2/instagram/05.jpg", link: "https://www.instagram.com/abrariooficial/" },
+  { id: 6, img: "/img/home-2/instagram/01.jpg", link: "https://www.instagram.com/abrariooficial/" },
+  { id: 7, img: "/img/home-2/instagram/02.jpg", link: "https://www.instagram.com/abrariooficial/" },
+  { id: 8, img: "/img/home-2/instagram/03.jpg", link: "https://www.instagram.com/abrariooficial/" },
+  { id: 9, img: "/img/home-2/instagram/04.jpg", link: "https://www.instagram.com/abrariooficial/" },
   {
     id: 10,
     img: "/img/home-2/instagram/05.jpg",
-    link: "https://instagram.com",
+    link: "https://www.instagram.com/abrariooficial/",
   },
 ];
 
@@ -140,15 +140,25 @@ const FooterTwo = () => {
                     </li>
                   </ul>
                   <div className="social-icon">
-                    <Link to="#">
-                      <i className="fa-brands fa-twitter" />
-                    </Link>
+                    <a
+                      href="https://www.facebook.com/Abrariooficial"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      title="Facebook AbraRio"
+                    >
+                      <i className="fa-brands fa-facebook-f" />
+                    </a>
                     <Link to="#">
                       <i className="fa-brands fa-whatsapp" />
                     </Link>
-                    <Link to="#">
+                    <a
+                      href="https://www.instagram.com/abrariooficial/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      title="Instagram AbraRio"
+                    >
                       <i className="fa-brands fa-instagram" />
-                    </Link>
+                    </a>
                     <Link to="#">
                       <i className="fas fa-paper-plane" />
                     </Link>

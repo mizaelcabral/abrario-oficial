@@ -37,16 +37,31 @@ const TopHeader = () => {
             </div>
           </div>
           <div className="social-icon">
-            <a href="#">
-              <i className="fa-brands fa-twitter" />
+            <a
+              href="https://www.facebook.com/Abrariooficial"
+              target="_blank"
+              rel="noopener noreferrer"
+              title="Facebook AbraRio"
+            >
+              <i className="fa-brands fa-facebook-f" />
             </a>
             <a href="https://wa.me/5521982043786" target="_blank" rel="noopener noreferrer">
               <i className="fa-brands fa-whatsapp" />
             </a>
-            <a href="#">
+            <a
+              href="https://www.instagram.com/abrariooficial/"
+              target="_blank"
+              rel="noopener noreferrer"
+              title="Instagram AbraRio"
+            >
               <i className="fa-brands fa-instagram" />
             </a>
-            <a href="#">
+            <a
+              href="https://www.youtube.com/@abrariooficial"
+              target="_blank"
+              rel="noopener noreferrer"
+              title="YouTube AbraRio"
+            >
               <i className="fa-brands fa-youtube" />
             </a>
           </div>
