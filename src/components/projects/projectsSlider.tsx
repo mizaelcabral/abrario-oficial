@@ -55,7 +55,7 @@ const ProjectsSlider = () => {
     <section
       id="eventos"
       style={{ scrollMarginTop: "110px" }}
-      className="project-section fix"
+      className="project-section section-padding pb-0 fix"
     >
       <div className="container">
         <div className="section-title text-center">
