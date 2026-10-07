@@ -16,7 +16,7 @@ const quickLinks: FooterLink[] = [
 
 const exploreNow: FooterLink[] = [
   { name: "Nosso Time", path: "/#nosso-time" },
-  { name: "Faça sua Doação", path: "/#doe" },
+  // { name: "Faça sua Doação", path: "/#doe" }, // Temporariamente desativado
   { name: "Perguntas Frequentes", path: "/faq" },
   { name: "Projetos & Eventos", path: "/#eventos" },
 ];

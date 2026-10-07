@@ -1,7 +1,7 @@
 import AboutOne from "@/components/about/aboutOne";
 import ContactInfoOne from "@/components/contact/contactInfoOne";
 import CounterOne from "@/components/counter/counterOne";
-import DonationOne from "@/components/donation/donationOne";
+// import DonationOne from "@/components/donation/donationOne"; // Temporariamente desativado
 import FaqList from "@/components/faqList";
 import HeroSlider from "@/components/hero/heroSlider";
 import NewsOne from "@/components/news/newsOne";
@@ -17,7 +17,7 @@ const Home = () => {
       <HeroSlider />
       <AboutOne />
       <ServicesOne />
-      <DonationOne />
+      {/* <DonationOne /> */}
       <ProjectsSlider />
       <Teams />
       <TestimonialOne />

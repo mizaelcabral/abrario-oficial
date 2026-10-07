@@ -39,10 +39,11 @@ export const menuData: MenuItem[] = [
         label: "NOSSO TIME",
         path: "/#nosso-time",
     },
-    {
-        label: "DOE",
-        path: "/#doe",
-    },
+    // Temporariamente desativado junto com a seção de Doações
+    // {
+    //     label: "DOE",
+    //     path: "/#doe",
+    // },
     {
         label: "CADASTRO DE PACIENTE",
         path: "https://abrario.cplylegacy.com.br/AreaAssociados/MinhaConta/CadastroAssociadoPF",
